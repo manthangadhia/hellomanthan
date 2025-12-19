@@ -1,0 +1,179 @@
+/* fundamental scrolling behaviour */
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 5rem;
+}
+
+/* Fonts */
+@font-face {
+	font-family: "Arbutus Slab";
+	src: url(fonts/Arbutus_Slab/ArbutusSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: "TittiliumWeb";
+    src: url(fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+}
+
+.arbutus-slab-regular {
+	font-family: "Arbutus Slab", serif;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: -0.01em;
+	color: #372a28;
+}
+
+/* Basic reset and text styling */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Arbutus Slab";
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	color: #372a28;
+	/* background-color: #ffd455; */
+	background-color: #fff4ea;
+}
+
+body a {
+    color: #372a28c4;
+    transition: color 0.2s ease;
+}
+
+body a:hover {
+    color: rgb(131, 83, 19);
+}
+
+/* Remove margin from first heading */
+h1,
+h2,
+h3
+{
+	margin-top: 1em;
+    margin-bottom: 1rem;
+}
+
+.greeting,
+.name {
+	display: block; /* Makes them stack vertically */
+}
+
+.question,
+.user-input {
+	display: block;
+}
+
+h2 {
+    font-family: "TittiliumWeb";
+	font-weight: 300;
+	font-size: 2.5rem;
+}
+
+/* --- Two-column layout --- */
+.two-column {
+	display: flex;
+	flex-direction: row; /* side by side on desktop */
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1rem;
+	max-width: 1100px;
+	margin: 2rem auto; /* centers the content */
+	padding: 1rem;
+}
+
+.column {
+	flex: 1; /* equal width */
+	padding: 0.5rem;
+}
+
+/* Large, serif name at the top left */
+.column:first-child h1 {
+	font-weight: 550;
+	font-size: 5rem;
+	margin-bottom: 1rem;
+	line-height: 1;
+    transition: color 0.2s ease;
+}
+
+.column:first-child h1:hover {
+    color: #2a6132;
+}
+
+
+/* --- Responsive collapse --- */
+@media (max-width: 768px) {
+	.two-column {
+		flex-direction: column;
+		padding: 1rem;
+		margin: 2rem auto;
+	}
+
+	.column {
+		padding: 1.5rem;
+	}
+
+	.column:first-child h1 {
+		font-size: 3rem;
+	}
+}
+
+/* --- Navbar --- */
+.navbar {
+	position: sticky; /* sticks to top of viewport */
+	top: 0; /* position at top edge */
+	width: 100%; /* full width */
+	background: #372a28; /* light background (customize this) */
+	/* border-bottom: 1px solid #372a28; */
+	z-index: 1000; /* ensure it stays above other content */
+}
+
+.navbar ul {
+	display: flex; /* horizontal layout */
+	justify-content: center; /* center the items */
+	gap: 5rem; /* space between links */
+	list-style: none; /* remove bullets */
+	margin: 0;
+	padding: 0.75rem 1rem;
+}
+
+.navbar a {
+	text-decoration: none;
+	font-family: "Arbutus Slab", serif;
+	font-size: 1.2rem;
+	color: #fff4ea;
+	transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+	color: #ffd455;
+}
+
+/* Animations and quirky info*/
+.personality {
+	display: block;
+	color: #372a28c7;
+	font-style: italic;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+
+.todo {
+	color: #372a284d;
+}
+
+/* Single column layout for other pages */
+.single-column {
+	max-width: 700px; /* adjust this to your preferred width */
+	margin: 2rem auto; /* centers the content */
+	padding: 1rem 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.single-column {
+		padding: 1rem;
+		margin: 1rem auto;
+	}
+}
