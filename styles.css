@@ -11,8 +11,13 @@ html {
 }
 
 @font-face {
-    font-family: "TittiliumWeb";
-    src: url(fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+    font-family: "NatureBlack";
+    src: url(fonts/zt_nature/ZTNature-Black.ttf);
+}
+
+@font-face {
+	font-family: "NatureMed";
+	src: url(fonts/zt_nature/ZTNature-Medium.ttf);
 }
 
 .arbutus-slab-regular {
@@ -66,9 +71,17 @@ h3
 }
 
 h2 {
-    font-family: "TittiliumWeb";
+    font-family: "NatureBlack";
 	font-weight: 300;
-	font-size: 2.5rem;
+	font-size: 2.9rem;
+	padding-bottom: 0.2rem;
+}
+
+h3 {
+	font-family: "NatureMed";
+	font-weight: 200;
+	font-size: 2.2rem;
+	padding: auto;
 }
 
 /* --- Two-column layout --- */
@@ -78,13 +91,13 @@ h2 {
 	justify-content: center;
 	align-items: flex-start;
 	gap: 1rem;
-	max-width: 1100px;
-	margin: 2rem auto; /* centers the content */
+	max-width: 75ch;
+	margin: 0 auto; /* centers the content */
 	padding: 1rem;
 }
 
 .column {
-	flex: 1; /* equal width */
+	flex: auto; /* equal width */
 	padding: 0.5rem;
 }
 
@@ -176,4 +189,12 @@ h2 {
 		padding: 1rem;
 		margin: 1rem auto;
 	}
+}
+
+/* Styling for sections on individual pages */
+
+#biography, #projects, #blog-intro {
+	max-width: 65ch;
+	margin: 4rem auto;
+	padding: 0 1rem;
 }
