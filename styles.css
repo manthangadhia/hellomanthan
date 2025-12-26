@@ -193,8 +193,25 @@ h3 {
 
 /* Styling for sections on individual pages */
 
-#biography, #projects, #blog-intro {
+#biography, 
+#projects, 
+#blog-intro,
+#experience,
+#education,
+#essay  {
 	max-width: 65ch;
 	margin: 4rem auto;
 	padding: 0 1rem;
+}
+/* this is a list of texts that I don't want to have marks  */
+.text_list {
+	list-style: none;
+}
+.subtitle {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+.disclaimer {
+	justify-content: center;
+	color: #372a28a5;
 }
