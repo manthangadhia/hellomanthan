@@ -1,0 +1,134 @@
+/* fundamental scrolling behaviour */
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 5rem;
+}
+
+/* Fonts */
+@font-face {
+	font-family: "Arbutus Slab";
+	src: url(../fonts/Arbutus_Slab/ArbutusSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: "NatureBlack";
+    src: url(../fonts/zt_nature/ZTNature-Black.ttf);
+}
+
+@font-face {
+	font-family: "NatureMed";
+	src: url(../fonts/zt_nature/ZTNature-Medium.ttf);
+}
+
+.arbutus-slab-regular {
+	font-family: "Arbutus Slab", serif;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: -0.01em;
+	color: #372a28;
+}
+
+/* Basic reset and text styling */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Arbutus Slab";
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	color: #372a28;
+	background-color: #fff4ea;
+}
+
+body a {
+    color: #372a28c4;
+    transition: color 0.2s ease;
+}
+
+body a:hover {
+    color: rgb(131, 83, 19);
+}
+
+/* Remove margin from first heading */
+h1,
+h2,
+h3
+{
+	margin-top: 1em;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: "NatureBlack";
+	font-weight: 300;
+	font-size: 2.9rem;
+	padding-bottom: 0.2rem;
+}
+
+h3 {
+	font-family: "NatureMed";
+	font-weight: 200;
+	font-size: 2.2rem;
+	padding: auto;
+}
+
+/* --- Navbar --- */
+.navbar {
+	position: sticky; /* sticks to top of viewport */
+	top: 0; /* position at top edge */
+	width: 100%; /* full width */
+	background: #372a28;
+	z-index: 1000; /* ensure it stays above other content */
+}
+
+.navbar ul {
+	display: flex; /* horizontal layout */
+	justify-content: center; /* center the items */
+	gap: 5rem; /* space between links */
+	list-style: none; /* remove bullets */
+	margin: 0;
+	padding: 0.75rem 1rem;
+}
+
+.navbar a {
+	text-decoration: none;
+	font-family: "Arbutus Slab", serif;
+	font-size: 1.2rem;
+	color: #fff4ea;
+	transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+	color: #ffd455;
+}
+
+/* Styling for blog post sections */
+#essay {
+	max-width: 65ch;
+	margin: 4rem auto;
+	padding: 0 1rem;
+}
+
+/* this is a list of texts that I don't want to have marks  */
+.text_list {
+	list-style: none;
+}
+
+.subtitle {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.disclaimer {
+	justify-content: center;
+	color: #372a28a5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	#essay {
+		padding: 1rem;
+		margin: 1rem auto;
+	}
+}
