@@ -10,3 +10,5 @@ Thumbs.db
 *.log
 
 # Optional: 
+# I don't want docx files in the repo
+*.docx
