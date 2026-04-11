@@ -5,6 +5,28 @@ html {
 }
 
 /* Fonts */
+/* Boxing */
+@font-face {
+  font-family: 'Boxing';
+  src: url('//cdn.fontshare.com/wf/3TCCMEW7OSY4MORIBO6XAVNRHGH2GCNO/M4CQ6LURAV5JJNQN553ONEN4JC5LOWC4/TBVH46IPDALW6CXZUYYWHJP7BV43WVVF.woff2') format('woff2'),
+       url('//cdn.fontshare.com/wf/3TCCMEW7OSY4MORIBO6XAVNRHGH2GCNO/M4CQ6LURAV5JJNQN553ONEN4JC5LOWC4/TBVH46IPDALW6CXZUYYWHJP7BV43WVVF.woff') format('woff'),
+       url('//cdn.fontshare.com/wf/3TCCMEW7OSY4MORIBO6XAVNRHGH2GCNO/M4CQ6LURAV5JJNQN553ONEN4JC5LOWC4/TBVH46IPDALW6CXZUYYWHJP7BV43WVVF.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url(fonts/Quicksand_Complete/TTF/Quicksand-Variable.ttf);
+}
+
+.quicksand-regular {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 100;
+	
+}
+
 @font-face {
 	font-family: "Arbutus Slab";
 	src: url(fonts/Arbutus_Slab/ArbutusSlab-Regular.ttf);
@@ -27,6 +49,8 @@ html {
 	letter-spacing: -0.01em;
 	color: #372a28;
 }
+
+
 
 /* Basic reset and text styling */
 
