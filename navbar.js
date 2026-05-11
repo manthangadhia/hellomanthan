@@ -40,6 +40,16 @@ if (navbarContainer) {
 
         navbarContainer.innerHTML = await res.text();
         rewriteNavbarLinksForNestedPages();
+
+        const toggle = navbarContainer.querySelector(".navbar-toggle");
+        const links = navbarContainer.querySelector(".navbar-links");
+
+        if (toggle && links) {
+          toggle.addEventListener("click", () => {
+            const isOpen = links.classList.toggle("is-open");
+            toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          });
+        }
         return;
       } catch {
         // Try next candidate path.
